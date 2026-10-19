@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AhorroCheck</title>
+<meta name="description" content="AhorroCheck: control personal de ingresos y gastos mensuales para Android. Tus datos quedan en tu teléfono y, si querés, en tu propio Google Drive.">
+<link rel="icon" href="icono.png" type="image/png">
+<style>
+  :root { --bg: #f6f8f6; --card: #ffffff; --ink: #1c2b22; --muted: #5b6a61; --accent: #1b6b4a; --accent-ink: #ffffff; --line: #dfe6e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1613; --card: #18231d; --ink: #e8efe9; --muted: #a4b3aa; --accent: #6fd3a3; --accent-ink: #0f1613; --line: #2a3a31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 2rem; margin: 0; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 28px; }
+  .cta { display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; padding: 12px 20px; border-radius: 999px; margin: 0 8px 28px 0; }
+  .cta.secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+  h2 { font-size: 1.25rem; margin: 32px 0 12px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 8px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--line); padding-top: 16px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icono.png" alt="" width="72" height="72">
+    <h1>AhorroCheck</h1>
+  </header>
+  <p class="tagline">Controlá tus ingresos y gastos del mes, con presupuesto y lectura de tickets. Sin cuentas ni publicidad.</p>
+
+  <a class="cta" href="#" aria-disabled="true">Próximamente en Google Play</a>
+  <a class="cta secondary" href="privacidad.html">Política de privacidad</a>
+
+  <div class="card">
+    <h2 style="margin-top:0">Qué podés hacer</h2>
+    <ul>
+      <li><strong>Resumen mensual:</strong> balance, ingresos, gastos, tasa de ahorro y gasto por día, con comparación contra el mes anterior.</li>
+      <li><strong>Gráficos claros:</strong> dónde se va el dinero por categoría y la evolución de los últimos seis meses.</li>
+      <li><strong>Movimientos en segundos:</strong> importe, categoría, fecha y nota. Buscá, filtrá y editá con un toque.</li>
+      <li><strong>Tickets con lectura automática:</strong> sacale una foto al ticket y la app lee el total, la fecha y el comercio, en el teléfono, sin enviar la imagen a ningún servidor.</li>
+      <li><strong>Presupuesto por categoría:</strong> topes mensuales con aviso al 80 % y al pasarte.</li>
+      <li><strong>Fijos mensuales:</strong> sueldo, alquiler, suscripciones, cargados con un toque y sin duplicarse.</li>
+      <li><strong>Copias de seguridad:</strong> exportá un .zip con todo o vinculá tu Google Drive para que la app suba una copia cada día.</li>
+    </ul>
+  </div>
+
+  <h2>Privacidad</h2>
+  <p>Todo se guarda en tu dispositivo. La copia en Google Drive es opcional, va a tu propia cuenta y usa solo el permiso <code>drive.file</code>, que limita el acceso a los archivos que la app crea. No hay registro, no hay anuncios y no se recopilan datos de uso. Leé la <a href="privacidad.html">política de privacidad</a> completa.</p>
+
+  <footer>
+    Contacto: <a href="mailto:avalenzano@gmail.com">avalenzano@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de AhorroCheck</title>
+<meta name="description" content="Qué información maneja la app AhorroCheck y cómo la trata.">
+<link rel="icon" href="icono.png" type="image/png">
+<style>
+  :root { --bg: #f6f8f6; --card: #ffffff; --ink: #1c2b22; --muted: #5b6a61; --accent: #1b6b4a; --line: #dfe6e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1613; --card: #18231d; --ink: #e8efe9; --muted: #a4b3aa; --accent: #6fd3a3; --line: #2a3a31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  nav a { color: var(--accent); text-decoration: none; }
+  h1 { font-size: 1.8rem; margin: 12px 0 4px; }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.95em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">← AhorroCheck</a></nav>
+  <h1>Política de privacidad de AhorroCheck</h1>
+  <p class="updated">Última actualización: 19 de octubre de 2026</p>
+
+  <p>AhorroCheck es una aplicación para Android de control personal de ingresos y gastos mensuales. Esta política describe qué información maneja la app y cómo la trata.</p>
+
+  <h2>Resumen</h2>
+  <ul>
+    <li>Todos tus datos (movimientos, categorías, presupuestos, fijos mensuales, moneda, tema y fotos de tickets) se guardan en tu dispositivo.</li>
+    <li>Si vos lo elegís, la app puede guardar copias de seguridad en tu propio Google Drive. Es opcional y podés desvincularlo cuando quieras.</li>
+    <li>AhorroCheck no tiene cuentas de usuario propias, no se conecta a ningún servidor del desarrollador y no envía tus datos a terceros.</li>
+    <li>No muestra publicidad ni incluye herramientas de analítica o seguimiento.</li>
+  </ul>
+
+  <h2>Datos que la app almacena en tu dispositivo</h2>
+  <ul>
+    <li>Los movimientos que registrás (importe, tipo, categoría, fecha y nota).</li>
+    <li>Tus categorías, topes de presupuesto, fijos mensuales y preferencias (moneda y tema).</li>
+    <li>Las fotos de tickets que decidís adjuntar a un gasto. Se guardan en el almacenamiento privado de la app, reducidas de tamaño.</li>
+  </ul>
+  <p>Estos datos no salen del dispositivo salvo que vos lo decidas mediante las funciones de exportación o la copia de seguridad en Google Drive descrita más abajo.</p>
+
+  <h2>Lectura de tickets (reconocimiento de texto)</h2>
+  <p>Para completar el importe, la fecha y el comercio a partir de la foto de un ticket, la app usa la biblioteca de reconocimiento de texto de Google ML Kit en su variante integrada en la aplicación. El procesamiento ocurre por completo en tu dispositivo: la imagen no se sube a ningún servidor.</p>
+
+  <h2>Cámara y galería</h2>
+  <p>La app no solicita el permiso de cámara. Para tomar una foto abre la aplicación de cámara del sistema y recibe solo la imagen que vos capturás. Para elegir una imagen existente usa el selector de fotos del sistema, que solo le entrega la imagen que seleccionás.</p>
+
+  <h2>Exportación y copias de seguridad</h2>
+  <p>Las funciones «Exportar copia de seguridad» y «Exportar movimientos (CSV)» generan un archivo que vos elegís dónde guardar. A partir de ese momento el archivo queda bajo tu control y fuera del alcance de la app.</p>
+  <p>Si tenés activada la copia de seguridad de Android (Google One / copia de seguridad del dispositivo), el sistema puede incluir los datos de la app en esa copia según la configuración de tu teléfono y las políticas de Google.</p>
+
+  <h2>Copia de seguridad en Google Drive (opcional)</h2>
+  <p>Desde Ajustes → Google Drive podés vincular tu cuenta de Google para que la app guarde copias de seguridad en tu propio Google Drive. Esta función está desactivada hasta que vos la vinculás.</p>
+  <ul>
+    <li><strong>Qué se envía:</strong> el mismo archivo <code>.zip</code> de la exportación manual (tus movimientos, categorías, presupuestos, fijos mensuales, preferencias y fotos de tickets), cifrado en tránsito.</li>
+    <li><strong>A dónde:</strong> a una carpeta llamada «AhorroCheck» de tu Drive, en tu cuenta. El desarrollador no recibe ni puede ver esos archivos; no pasan por ningún servidor propio.</li>
+    <li><strong>Qué permiso se pide:</strong> únicamente <code>drive.file</code>, que permite a la app ver y modificar solo los archivos que ella misma creó. No puede acceder al resto de tu Drive.</li>
+    <li><strong>Cuándo:</strong> cada día al abrir la app, unos minutos después de cada cambio y, como respaldo, una vez al día, solo con Wi-Fi si así lo dejás configurado; también cuando tocás «Respaldar ahora». Se conservan las 10 copias más recientes.</li>
+    <li><strong>Qué guarda la app en el dispositivo sobre la vinculación:</strong> el correo de la cuenta elegida, el identificador de la carpeta y la fecha de la última copia.</li>
+    <li><strong>Cómo dejar de usarla:</strong> «Desvincular» en Ajustes detiene las copias. Las ya subidas quedan en tu Drive y podés borrarlas desde Drive. Para quitarle el permiso a la app, usá <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Los datos guardados en Google Drive quedan sujetos a la política de privacidad de Google. El uso que hace AhorroCheck de la información recibida de las APIs de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los Servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+  <h2>Datos que no se recopilan</h2>
+  <p>AhorroCheck no recopila ni comparte datos personales, identificadores del dispositivo, ubicación, contactos ni datos de uso. La única conexión a Internet que realiza es, si la activás, con Google Drive para tus copias de seguridad.</p>
+
+  <h2>Eliminación de datos</h2>
+  <p>Podés borrar todos los datos desde Ajustes → «Borrar todos los datos», o desinstalando la aplicación.</p>
+
+  <h2>Menores</h2>
+  <p>La app no está dirigida a menores de 13 años y no recopila datos de ningún usuario.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si la app incorpora funciones que cambien el tratamiento de datos (por ejemplo, publicidad), esta política se actualizará y la fecha de la parte superior reflejará el cambio.</p>
+
+  <h2>Contacto</h2>
+  <p>Para consultas sobre esta política: <a href="mailto:avalenzano@gmail.com">avalenzano@gmail.com</a></p>
+</main>
+</body>
+</html>
