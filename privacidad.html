@@ -34,35 +34,48 @@
 
   <h2>Resumen</h2>
   <ul>
-    <li>Todos tus datos (movimientos, categorías, presupuestos, fijos mensuales, moneda, tema y fotos de tickets) se guardan en tu dispositivo.</li>
+    <li>Todos tus datos (movimientos, categorías, presupuestos, fijos mensuales, cuentas y tarjetas, cuotas, metas de ahorro, gastos frecuentes, moneda y cotización, tema, recordatorios y fotos de tickets) se guardan en tu dispositivo.</li>
     <li>Si vos lo elegís, la app puede guardar copias de seguridad en tu propio Google Drive. Es opcional y podés desvincularlo cuando quieras.</li>
     <li>Si vos lo elegís, podés compartir un resumen del mes (sin notas ni fotos) con la app Gemini u otra app desde el botón «Analizar con Gemini».</li>
-    <li>AhorroCheck no tiene cuentas de usuario propias, no se conecta a ningún servidor del desarrollador y no envía tus datos a terceros.</li>
+    <li>Los recordatorios y las alertas de presupuesto son notificaciones que se generan en tu propio teléfono; no hay ningún servicio de notificaciones externo.</li>
+    <li>AhorroCheck no tiene cuentas de usuario propias, no se conecta a ningún servidor del desarrollador, no se conecta a tu banco y no envía tus datos a terceros.</li>
     <li>No muestra publicidad ni incluye herramientas de analítica o seguimiento.</li>
   </ul>
 
   <h2>Datos que la app almacena en tu dispositivo</h2>
   <ul>
-    <li>Los movimientos que registrás (importe, tipo, categoría, fecha y nota).</li>
-    <li>Tus categorías, topes de presupuesto, fijos mensuales y preferencias (moneda y tema).</li>
+    <li>Los movimientos que registrás (importe, tipo, categoría, cuenta, fecha y nota) y, si cargás un gasto en otra moneda, el importe original y la cotización.</li>
+    <li>Tus categorías, topes de presupuesto, fijos mensuales, compras en cuotas, metas de ahorro con sus aportes y gastos frecuentes.</li>
+    <li>Tus cuentas y tarjetas: solo el nombre, el tipo (efectivo, débito o crédito), el saldo inicial y, en las tarjetas, el día de cierre y el de vencimiento. La app nunca pide ni guarda números de tarjeta, usuarios ni contraseñas de tu banco.</li>
+    <li>Tus preferencias: moneda principal y secundaria, cotización, tema y configuración de recordatorios.</li>
     <li>Las fotos de tickets que decidís adjuntar a un gasto. Se guardan en el almacenamiento privado de la app, reducidas de tamaño.</li>
+    <li>Si activás el bloqueo con PIN, la app guarda una verificación derivada del PIN (no el PIN en sí). La huella o el rostro los verifica Android: la app nunca accede a tus datos biométricos.</li>
   </ul>
   <p>Estos datos no salen del dispositivo salvo que vos lo decidas mediante las funciones de exportación o la copia de seguridad en Google Drive descrita más abajo.</p>
 
-  <h2>Lectura de tickets (reconocimiento de texto)</h2>
-  <p>Para completar el importe, la fecha y el comercio a partir de la foto de un ticket, la app usa la biblioteca de reconocimiento de texto de Google ML Kit en su variante integrada en la aplicación. El procesamiento ocurre por completo en tu dispositivo: la imagen no se sube a ningún servidor.</p>
+  <h2>Lectura de tickets (reconocimiento de texto y de QR)</h2>
+  <p>Para completar el importe, la fecha y el comercio a partir de la foto de un ticket, la app usa las bibliotecas de reconocimiento de texto y de lectura de códigos de Google ML Kit en su variante integrada en la aplicación. Si el ticket tiene el código QR de la factura electrónica (e-factura de DGI), la app lee de él el importe y la fecha. El procesamiento ocurre por completo en tu dispositivo: la imagen no se sube a ningún servidor y la app no consulta ningún servicio externo con los datos del QR.</p>
 
   <h2>Cámara y galería</h2>
   <p>La app no solicita el permiso de cámara. Para tomar una foto abre la aplicación de cámara del sistema y recibe solo la imagen que vos capturás. Para elegir una imagen existente usa el selector de fotos del sistema, que solo le entrega la imagen que seleccionás.</p>
 
+  <h2>Importación del estado de cuenta del banco</h2>
+  <p>Podés importar un archivo CSV exportado desde la web o la app de tu banco. La app lee únicamente el archivo que vos elegís con el selector de archivos del sistema, lo interpreta en el dispositivo y no se conecta a tu banco ni te pide credenciales bancarias.</p>
+
+  <h2>Notificaciones</h2>
+  <p>Si activás los recordatorios (diario o semanal, y el aviso de fijos sin aplicar) o las alertas de presupuesto, la app muestra notificaciones generadas en tu propio teléfono, para lo que pide el permiso de notificaciones en Android 13 o superior. No usa ningún servicio de notificaciones push. Con el bloqueo por PIN activo, las notificaciones no muestran importes en la pantalla de bloqueo.</p>
+
+  <h2>Widget y accesos directos</h2>
+  <p>El widget de la pantalla de inicio muestra el balance del mes a partir de los datos guardados en el dispositivo. Con el bloqueo por PIN activo, en lugar de importes muestra «Tocá para ver». Los accesos directos del ícono solo abren la app en la pantalla de nuevo gasto o de escaneo de ticket.</p>
+
   <h2>Exportación y copias de seguridad</h2>
   <p>Las funciones «Exportar copia de seguridad» y «Exportar movimientos (CSV)» generan un archivo que vos elegís dónde guardar. A partir de ese momento el archivo queda bajo tu control y fuera del alcance de la app.</p>
-  <p>Si tenés activada la copia de seguridad de Android (Google One / copia de seguridad del dispositivo), el sistema puede incluir los datos de la app en esa copia según la configuración de tu teléfono y las políticas de Google.</p>
+  <p>Si tenés activada la copia de seguridad de Android (Google One / copia de seguridad del dispositivo), el sistema incluye únicamente el archivo de datos de la app (no las fotos de tickets) y solo cuando la copia va cifrada de extremo a extremo con el bloqueo de pantalla de tu teléfono. En una transferencia directa entre teléfonos se copian también las fotos.</p>
 
   <h2>Copia de seguridad en Google Drive (opcional)</h2>
   <p>Desde Ajustes → Google Drive podés vincular tu cuenta de Google para que la app guarde copias de seguridad en tu propio Google Drive. Esta función está desactivada hasta que vos la vinculás.</p>
   <ul>
-    <li><strong>Qué se envía:</strong> el mismo archivo <code>.zip</code> de la exportación manual (tus movimientos, categorías, presupuestos, fijos mensuales, preferencias y fotos de tickets), cifrado en tránsito.</li>
+    <li><strong>Qué se envía:</strong> el mismo archivo <code>.zip</code> de la exportación manual (tus movimientos, categorías, presupuestos, fijos mensuales, cuentas, cuotas, metas, preferencias y fotos de tickets), cifrado en tránsito.</li>
     <li><strong>A dónde:</strong> a una carpeta llamada «AhorroCheck» de tu Drive, en tu cuenta. El desarrollador no recibe ni puede ver esos archivos; no pasan por ningún servidor propio.</li>
     <li><strong>Qué permiso se pide:</strong> únicamente <code>drive.file</code>, que permite a la app ver y modificar solo los archivos que ella misma creó. No puede acceder al resto de tu Drive.</li>
     <li><strong>Cuándo:</strong> cada día al abrir la app, unos minutos después de cada cambio y, como respaldo, una vez al día, solo con Wi-Fi si así lo dejás configurado; también cuando tocás «Respaldar ahora». Se conservan las 10 copias más recientes.</li>
