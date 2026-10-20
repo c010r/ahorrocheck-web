@@ -37,6 +37,7 @@
     <li>Todos tus datos (movimientos, categorías, presupuestos, fijos mensuales, cuentas y tarjetas, cuotas, metas de ahorro, gastos frecuentes, moneda y cotización, tema, recordatorios y fotos de tickets) se guardan en tu dispositivo.</li>
     <li>Si vos lo elegís, la app puede guardar copias de seguridad en tu propio Google Drive. Es opcional y podés desvincularlo cuando quieras.</li>
     <li>Si vos lo elegís, podés compartir un resumen del mes (sin notas ni fotos) con la app Gemini u otra app desde el botón «Analizar con Gemini».</li>
+    <li>Si vos cargás tu propia clave de la API de Gemini, después de cada gasto la app le pide a Gemini una idea para ahorrar: envía a Google los datos de ese gasto y agregados del mes, nunca notas ni fotos.</li>
     <li>Los recordatorios y las alertas de presupuesto son notificaciones que se generan en tu propio teléfono; no hay ningún servicio de notificaciones externo.</li>
     <li>AhorroCheck no tiene cuentas de usuario propias, no se conecta a ningún servidor del desarrollador, no se conecta a tu banco y no envía tus datos a terceros.</li>
     <li>No muestra publicidad ni incluye herramientas de analítica o seguimiento.</li>
@@ -87,8 +88,17 @@
   <h2>Consejos con Gemini (opcional)</h2>
   <p>El botón «Analizar con Gemini» del Resumen arma un texto con un resumen del mes (ingresos y gastos totales, gastos por categoría comparados con el mes anterior, presupuestos, fijos mensuales e historial de meses) y lo comparte, con tu confirmación, con la app Gemini de Google si está instalada o con la app que elijas en el selector de Android. No incluye las notas de los movimientos ni las fotos de tickets. Nada se envía hasta que tocás «Enviar», y el tratamiento posterior queda sujeto a la política de privacidad de Google o de la app que elijas.</p>
 
+  <h2>Ideas de ahorro con tu clave de Gemini (opcional)</h2>
+  <p>Desde Ajustes → Ideas de ahorro con Gemini podés cargar una clave de la API de Gemini que creás vos en Google AI Studio. La función está desactivada hasta que cargás una clave, y podés apagar la idea automática o quitar la clave cuando quieras.</p>
+  <ul>
+    <li><strong>Qué se envía:</strong> cada vez que registrás un gasto (o tocás «Pedir una idea»), el importe, la categoría, la fecha y el medio de pago (efectivo, débito, crédito, cuotas) de ese gasto, junto con los totales del mes y del anterior por categoría, tus presupuestos, tus fijos mensuales (solo categoría, importe y día) y el historial de meses. Nunca las notas de los movimientos, los nombres de tus cuentas ni las fotos de tickets.</li>
+    <li><strong>A dónde:</strong> directamente a la API de Gemini de Google (<code>generativelanguage.googleapis.com</code>), por HTTPS y a nombre de tu clave. No pasa por ningún servidor del desarrollador.</li>
+    <li><strong>Uso por parte de Google:</strong> queda sujeto a las <a href="https://ai.google.dev/gemini-api/terms">condiciones de la API de Gemini</a>. Con claves del nivel gratuito, Google puede usar el contenido enviado para mejorar sus productos.</li>
+    <li><strong>La clave:</strong> se guarda cifrada en el teléfono con el Android Keystore, no se incluye en las copias de seguridad ni en Drive, y «Quitar clave» la borra. Al cargarla, la app hace una prueba que no lleva datos tuyos.</li>
+  </ul>
+
   <h2>Datos que no se recopilan</h2>
-  <p>AhorroCheck no recopila ni comparte datos personales, identificadores del dispositivo, ubicación, contactos ni datos de uso. La única conexión a Internet que realiza es, si la activás, con Google Drive para tus copias de seguridad.</p>
+  <p>AhorroCheck no recopila ni comparte datos personales, identificadores del dispositivo, ubicación, contactos ni datos de uso. Las únicas conexiones a Internet que realiza son, si las activás, con Google Drive para tus copias de seguridad y con la API de Gemini para las ideas de ahorro.</p>
 
   <h2>Eliminación de datos</h2>
   <p>Podés borrar todos los datos desde Ajustes → «Borrar todos los datos», o desinstalando la aplicación.</p>
