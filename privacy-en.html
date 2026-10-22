@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AhorroCheck Privacy Policy</title>
+<meta name="description" content="What information the AhorroCheck app handles and how it treats it.">
+<link rel="icon" href="icono.png" type="image/png">
+<link rel="alternate" hreflang="es" href="https://c010r.github.io/ahorrocheck-web/privacidad.html">
+<link rel="alternate" hreflang="en" href="https://c010r.github.io/ahorrocheck-web/privacy-en.html">
+<link rel="alternate" hreflang="it" href="https://c010r.github.io/ahorrocheck-web/privacy-it.html">
+<link rel="alternate" hreflang="fr" href="https://c010r.github.io/ahorrocheck-web/privacy-fr.html">
+<link rel="alternate" hreflang="pt-BR" href="https://c010r.github.io/ahorrocheck-web/privacy-pt.html">
+<style>
+  :root { --bg: #f6f8f6; --card: #ffffff; --ink: #1c2b22; --muted: #5b6a61; --accent: #1b6b4a; --line: #dfe6e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1613; --card: #18231d; --ink: #e8efe9; --muted: #a4b3aa; --accent: #6fd3a3; --line: #2a3a31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  nav a { color: var(--accent); text-decoration: none; }
+  .langs { margin-top: 6px; color: var(--muted); font-size: 0.9rem; }
+  h1 { font-size: 1.8rem; margin: 12px 0 4px; }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.95em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">← AhorroCheck</a></nav>
+  <nav class="langs" aria-label="Language"><a href="privacidad.html" hreflang="es" lang="es">Español</a> · <span aria-current="page">English</span> · <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a> · <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a> · <a href="privacy-pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
+  <h1>AhorroCheck Privacy Policy</h1>
+  <p class="updated">Last updated: October 20, 2026</p>
+
+  <p>AhorroCheck is an Android app for personal tracking of monthly income and expenses. This policy describes what information the app handles and how it treats it.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>All your data (transactions, categories, budgets, monthly recurring items, accounts and cards, installments, savings goals, frequent expenses, currency and exchange rate, theme, reminders and receipt photos) is stored on your device.</li>
+    <li>If you choose to, the app can save backups to your own Google Drive. This is optional and you can unlink it whenever you want.</li>
+    <li>If you choose to, you can share a summary of the month (without notes or photos) with the Gemini app or another app using the “Analyze with Gemini” button.</li>
+    <li>If you enter your own Gemini API key, after each expense the app asks Gemini for a saving idea: it sends Google the details of that expense and aggregates for the month, never notes or photos.</li>
+    <li>Reminders and budget alerts are notifications generated on your own phone; there is no external notification service.</li>
+    <li>AhorroCheck has no user accounts of its own, does not connect to any server of the developer, does not connect to your bank and does not send your data to third parties.</li>
+    <li>It does not show advertising or include analytics or tracking tools.</li>
+  </ul>
+
+  <h2>Data the app stores on your device</h2>
+  <ul>
+    <li>The transactions you record (amount, type, category, account, date and note) and, if you enter an expense in another currency, the original amount and the exchange rate.</li>
+    <li>Your categories, budget limits, monthly recurring items, installment purchases, savings goals with their contributions, and frequent expenses.</li>
+    <li>Your accounts and cards: only the name, the type (cash, debit or credit), the opening balance and, for cards, the statement closing day and the due day. The app never asks for or stores card numbers, or your bank usernames or passwords.</li>
+    <li>Your preferences: primary and secondary currency, exchange rate, theme and reminder settings.</li>
+    <li>The receipt photos you decide to attach to an expense. They are stored in the app’s private storage, reduced in size.</li>
+    <li>If you turn on PIN lock, the app stores a verification value derived from the PIN (not the PIN itself). Fingerprint or face is verified by Android: the app never accesses your biometric data.</li>
+  </ul>
+  <p>This data does not leave the device unless you decide so through the export features or the Google Drive backup described below.</p>
+
+  <h2>Receipt reading (text and QR recognition)</h2>
+  <p>To fill in the amount, date and merchant from a photo of a receipt, the app uses the Google ML Kit text recognition and barcode scanning libraries in their version bundled with the app. If the receipt has the QR code of the electronic invoice (DGI e-factura), the app reads the amount and date from it. Processing takes place entirely on your device: the image is not uploaded to any server and the app does not query any external service with the QR data.</p>
+
+  <h2>Camera and gallery</h2>
+  <p>The app does not request the camera permission. To take a photo it opens the system camera app and receives only the image you capture. To choose an existing image it uses the system photo picker, which only gives it the image you select.</p>
+
+  <h2>Importing your bank statement</h2>
+  <p>You can import a CSV file exported from your bank’s website or app. The app reads only the file you choose with the system file picker, interprets it on the device, and does not connect to your bank or ask you for banking credentials.</p>
+
+  <h2>Notifications</h2>
+  <p>If you turn on reminders (daily or weekly, and the notice for recurring items not applied) or budget alerts, the app shows notifications generated on your own phone, for which it requests the notifications permission on Android 13 or later. It does not use any push notification service. With PIN lock on, notifications do not show amounts on the lock screen.</p>
+
+  <h2>Widget and shortcuts</h2>
+  <p>The home screen widget shows the month’s balance based on the data stored on the device. With PIN lock on, instead of amounts it shows “Tap to view”. The icon shortcuts only open the app on the new expense or receipt scanning screen.</p>
+
+  <h2>Export and backups</h2>
+  <p>The “Export backup” and “Export transactions (CSV)” features generate a file and you choose where to save it. From that moment on, the file is under your control and outside the app’s reach.</p>
+  <p>If you have Android backup turned on (Google One / device backup), the system includes only the app’s data file (not the receipt photos), and only when the backup is end-to-end encrypted with your phone’s screen lock. In a direct phone-to-phone transfer, the photos are copied as well.</p>
+
+  <h2>Google Drive backup (optional)</h2>
+  <p>From Settings → Google Drive you can link your Google account so that the app saves backups to your own Google Drive. This feature is turned off until you link it.</p>
+  <ul>
+    <li><strong>What is sent:</strong> the same <code>.zip</code> file as the manual export (your transactions, categories, budgets, monthly recurring items, accounts, installments, goals, preferences and receipt photos), encrypted in transit.</li>
+    <li><strong>Where to:</strong> a folder named “AhorroCheck” in your Drive, in your account. The developer does not receive and cannot see those files; they do not pass through any server of the developer’s.</li>
+    <li><strong>What permission is requested:</strong> only <code>drive.file</code>, which allows the app to see and modify only the files it created itself. It cannot access the rest of your Drive.</li>
+    <li><strong>When:</strong> each day when you open the app, a few minutes after each change and, as a fallback, once a day, only on Wi-Fi if you leave it set that way; also when you tap “Back up now”. A single copy is kept, the most recent one: each new copy replaces the previous one.</li>
+    <li><strong>What the app stores on the device about the link:</strong> the email address of the chosen account, the folder identifier and the date of the last backup.</li>
+    <li><strong>How to stop using it:</strong> “Unlink” in Settings stops the backups. Those already uploaded remain in your Drive and you can delete them from Drive. To remove the app’s permission, use <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Data saved in Google Drive is subject to Google’s privacy policy. AhorroCheck’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Tips with Gemini (optional)</h2>
+  <p>The “Analyze with Gemini” button in the Summary builds a text with a summary of the month (total income and expenses, expenses by category compared with the previous month, budgets, monthly recurring items and month history) and shares it, with your confirmation, with Google’s Gemini app if it is installed, or with the app you choose in the Android chooser. It does not include transaction notes or receipt photos. Nothing is sent until you tap “Send”, and any further processing is subject to the privacy policy of Google or of the app you choose.</p>
+
+  <h2>Saving ideas with your Gemini key (optional)</h2>
+  <p>From Settings → Saving ideas with Gemini you can enter a Gemini API key that you create yourself in Google AI Studio. The feature is turned off until you enter a key, and you can turn off the automatic idea or remove the key whenever you want.</p>
+  <ul>
+    <li><strong>What is sent:</strong> each time you record an expense (or tap “Get an idea”), the amount, category, date and payment method (cash, debit, credit, installments) of that expense, together with the totals by category for the month and the previous month, your budgets, your monthly recurring items (only category, amount and day) and the month history. Never transaction notes, your account names or receipt photos.</li>
+    <li><strong>Where to:</strong> directly to Google’s Gemini API (<code>generativelanguage.googleapis.com</code>), over HTTPS and under your key. It does not pass through any server of the developer.</li>
+    <li><strong>Use by Google:</strong> subject to the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. With free-tier keys, Google may use the content sent to improve its products.</li>
+    <li><strong>The key:</strong> it is stored encrypted on the phone with the Android Keystore, it is not included in backups or in Drive, and “Remove key” deletes it. When you enter it, the app runs a test that carries none of your data.</li>
+  </ul>
+
+  <h2>Data that is not collected</h2>
+  <p>AhorroCheck does not collect or share personal data, device identifiers, location, contacts or usage data. The only Internet connections it makes are, if you turn them on, to Google Drive for your backups and to the Gemini API for saving ideas.</p>
+
+  <h2>Data deletion</h2>
+  <p>You can delete all data from Settings → “Delete all data”, or by uninstalling the app.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and does not collect data from any user.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app adds features that change how data is handled (for example, advertising), this policy will be updated and the date at the top will reflect the change.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy: <a href="mailto:avalenzano@gmail.com">avalenzano@gmail.com</a></p>
+</main>
+</body>
+</html>

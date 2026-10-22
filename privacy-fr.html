@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité d’AhorroCheck</title>
+<meta name="description" content="Quelles informations l’application AhorroCheck traite et de quelle manière.">
+<link rel="icon" href="icono.png" type="image/png">
+<link rel="alternate" hreflang="es" href="https://c010r.github.io/ahorrocheck-web/privacidad.html">
+<link rel="alternate" hreflang="en" href="https://c010r.github.io/ahorrocheck-web/privacy-en.html">
+<link rel="alternate" hreflang="it" href="https://c010r.github.io/ahorrocheck-web/privacy-it.html">
+<link rel="alternate" hreflang="fr" href="https://c010r.github.io/ahorrocheck-web/privacy-fr.html">
+<link rel="alternate" hreflang="pt-BR" href="https://c010r.github.io/ahorrocheck-web/privacy-pt.html">
+<style>
+  :root { --bg: #f6f8f6; --card: #ffffff; --ink: #1c2b22; --muted: #5b6a61; --accent: #1b6b4a; --line: #dfe6e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1613; --card: #18231d; --ink: #e8efe9; --muted: #a4b3aa; --accent: #6fd3a3; --line: #2a3a31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  nav a { color: var(--accent); text-decoration: none; }
+  .langs { margin-top: 6px; color: var(--muted); font-size: 0.9rem; }
+  h1 { font-size: 1.8rem; margin: 12px 0 4px; }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.95em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">← AhorroCheck</a></nav>
+  <nav class="langs" aria-label="Langue"><a href="privacidad.html" hreflang="es" lang="es">Español</a> · <a href="privacy-en.html" hreflang="en" lang="en">English</a> · <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a> · <span aria-current="page">Français</span> · <a href="privacy-pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
+  <h1>Politique de confidentialité d’AhorroCheck</h1>
+  <p class="updated">Dernière mise à jour : 20 octobre 2026</p>
+
+  <p>AhorroCheck est une application Android de suivi personnel des revenus et des dépenses mensuels. La présente politique décrit quelles informations l’application traite et de quelle manière.</p>
+
+  <h2>En résumé</h2>
+  <ul>
+    <li>Toutes vos données (opérations, catégories, budgets, opérations récurrentes mensuelles, comptes et cartes, paiements en plusieurs fois, objectifs d’épargne, dépenses fréquentes, devise et taux de change, thème, rappels et photos de tickets de caisse) sont enregistrées sur votre appareil.</li>
+    <li>Si vous le choisissez, l’application peut enregistrer des sauvegardes dans votre propre Google Drive. C’est facultatif et vous pouvez le dissocier à tout moment.</li>
+    <li>Si vous le choisissez, vous pouvez partager un résumé du mois (sans notes ni photos) avec l’application Gemini ou une autre application à l’aide du bouton « Analyser avec Gemini ».</li>
+    <li>Si vous saisissez votre propre clé de l’API Gemini, après chaque dépense l’application demande à Gemini une idée pour économiser : elle envoie à Google les données de cette dépense et des données agrégées du mois, jamais de notes ni de photos.</li>
+    <li>Les rappels et les alertes de budget sont des notifications générées sur votre propre téléphone ; il n’y a aucun service de notifications externe.</li>
+    <li>AhorroCheck ne dispose pas de comptes utilisateur propres, ne se connecte à aucun serveur du développeur, ne se connecte pas à votre banque et n’envoie pas vos données à des tiers.</li>
+    <li>Elle n’affiche pas de publicité et n’intègre aucun outil d’analyse ou de suivi.</li>
+  </ul>
+
+  <h2>Données que l’application enregistre sur votre appareil</h2>
+  <ul>
+    <li>Les opérations que vous enregistrez (montant, type, catégorie, compte, date et note) et, si vous saisissez une dépense dans une autre devise, le montant d’origine et le taux de change.</li>
+    <li>Vos catégories, plafonds de budget, opérations récurrentes mensuelles, achats en plusieurs fois, objectifs d’épargne avec leurs versements et dépenses fréquentes.</li>
+    <li>Vos comptes et cartes : uniquement le nom, le type (espèces, débit ou crédit), le solde initial et, pour les cartes, le jour d’arrêté du relevé et le jour d’échéance. L’application ne demande ni n’enregistre jamais de numéros de carte, d’identifiants ou de mots de passe de votre banque.</li>
+    <li>Vos préférences : devise principale et secondaire, taux de change, thème et paramètres des rappels.</li>
+    <li>Les photos de tickets de caisse que vous décidez de joindre à une dépense. Elles sont enregistrées dans l’espace de stockage privé de l’application, en taille réduite.</li>
+    <li>Si vous activez le verrouillage par code PIN, l’application enregistre une valeur de vérification dérivée du code PIN (et non le code PIN lui-même). L’empreinte digitale ou le visage sont vérifiés par Android : l’application n’accède jamais à vos données biométriques.</li>
+  </ul>
+  <p>Ces données ne quittent pas l’appareil, sauf si vous en décidez ainsi au moyen des fonctions d’exportation ou de la sauvegarde sur Google Drive décrite ci-dessous.</p>
+
+  <h2>Lecture des tickets de caisse (reconnaissance de texte et de QR codes)</h2>
+  <p>Pour remplir le montant, la date et le commerçant à partir de la photo d’un ticket de caisse, l’application utilise les bibliothèques de reconnaissance de texte et de lecture de codes de Google ML Kit dans leur version intégrée à l’application. Si le ticket comporte le QR code de la facture électronique (e-factura de la DGI), l’application en lit le montant et la date. Le traitement s’effectue entièrement sur votre appareil : l’image n’est envoyée à aucun serveur et l’application n’interroge aucun service externe avec les données du QR code.</p>
+
+  <h2>Appareil photo et galerie</h2>
+  <p>L’application ne demande pas l’autorisation d’accès à l’appareil photo. Pour prendre une photo, elle ouvre l’application d’appareil photo du système et ne reçoit que l’image que vous prenez. Pour choisir une image existante, elle utilise le sélecteur de photos du système, qui ne lui transmet que l’image que vous sélectionnez.</p>
+
+  <h2>Importation du relevé bancaire</h2>
+  <p>Vous pouvez importer un fichier CSV exporté depuis le site web ou l’application de votre banque. L’application lit uniquement le fichier que vous choisissez avec le sélecteur de fichiers du système, l’interprète sur l’appareil, ne se connecte pas à votre banque et ne vous demande pas vos identifiants bancaires.</p>
+
+  <h2>Notifications</h2>
+  <p>Si vous activez les rappels (quotidien ou hebdomadaire, et l’avis des opérations récurrentes non appliquées) ou les alertes de budget, l’application affiche des notifications générées sur votre propre téléphone, pour lesquelles elle demande l’autorisation d’envoyer des notifications sur Android 13 ou version ultérieure. Elle n’utilise aucun service de notifications push. Lorsque le verrouillage par code PIN est actif, les notifications n’affichent pas de montants sur l’écran de verrouillage.</p>
+
+  <h2>Widget et raccourcis</h2>
+  <p>Le widget de l’écran d’accueil affiche le solde du mois à partir des données enregistrées sur l’appareil. Lorsque le verrouillage par code PIN est actif, il affiche « Appuyez pour voir » au lieu des montants. Les raccourcis de l’icône ouvrent uniquement l’application sur l’écran de nouvelle dépense ou de numérisation de ticket.</p>
+
+  <h2>Exportation et sauvegardes</h2>
+  <p>Les fonctions « Exporter une sauvegarde » et « Exporter les opérations (CSV) » génèrent un fichier dont vous choisissez l’emplacement d’enregistrement. À partir de ce moment, le fichier est sous votre contrôle et hors de portée de l’application.</p>
+  <p>Si vous avez activé la sauvegarde Android (Google One / sauvegarde de l’appareil), le système inclut uniquement le fichier de données de l’application (pas les photos de tickets), et seulement lorsque la sauvegarde est chiffrée de bout en bout avec le verrouillage de l’écran de votre téléphone. Lors d’un transfert direct entre téléphones, les photos sont également copiées.</p>
+
+  <h2>Sauvegarde sur Google Drive (facultative)</h2>
+  <p>Depuis Paramètres → Google Drive, vous pouvez associer votre compte Google pour que l’application enregistre des sauvegardes dans votre propre Google Drive. Cette fonction est désactivée tant que vous ne l’avez pas associée.</p>
+  <ul>
+    <li><strong>Ce qui est envoyé :</strong> le même fichier <code>.zip</code> que celui de l’exportation manuelle (vos opérations, catégories, budgets, opérations récurrentes mensuelles, comptes, paiements en plusieurs fois, objectifs, préférences et photos de tickets), chiffré pendant le transfert.</li>
+    <li><strong>Où :</strong> dans un dossier nommé « AhorroCheck » de votre Drive, sur votre compte. Le développeur ne reçoit pas ces fichiers et ne peut pas les voir ; ils ne transitent par aucun serveur du développeur.</li>
+    <li><strong>Quelle autorisation est demandée :</strong> uniquement <code>drive.file</code>, qui permet à l’application de voir et de modifier seulement les fichiers qu’elle a elle-même créés. Elle ne peut pas accéder au reste de votre Drive.</li>
+    <li><strong>Quand :</strong> chaque jour à l’ouverture de l’application, quelques minutes après chaque modification et, par sécurité, une fois par jour, uniquement en Wi-Fi si vous l’avez configuré ainsi ; également lorsque vous appuyez sur « Sauvegarder maintenant ». Une seule copie est conservée, la plus récente : chaque nouvelle copie remplace la précédente.</li>
+    <li><strong>Ce que l’application enregistre sur l’appareil au sujet de l’association :</strong> l’adresse e-mail du compte choisi, l’identifiant du dossier et la date de la dernière sauvegarde.</li>
+    <li><strong>Comment cesser de l’utiliser :</strong> « Dissocier » dans Paramètres arrête les sauvegardes. Celles déjà envoyées restent dans votre Drive et vous pouvez les supprimer depuis Drive. Pour retirer l’autorisation accordée à l’application, utilisez <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Les données enregistrées dans Google Drive sont soumises aux règles de confidentialité de Google. L’utilisation par AhorroCheck des informations reçues des API Google respecte le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur des services d’API Google</a>, y compris les exigences d’utilisation limitée.</p>
+
+  <h2>Conseils avec Gemini (facultatif)</h2>
+  <p>Le bouton « Analyser avec Gemini » du Résumé compose un texte contenant un résumé du mois (revenus et dépenses totaux, dépenses par catégorie comparées au mois précédent, budgets, opérations récurrentes mensuelles et historique des mois) et le partage, avec votre confirmation, avec l’application Gemini de Google si elle est installée, ou avec l’application que vous choisissez dans le sélecteur d’Android. Il n’inclut pas les notes des opérations ni les photos de tickets. Rien n’est envoyé tant que vous n’avez pas appuyé sur « Envoyer », et le traitement ultérieur est soumis aux règles de confidentialité de Google ou de l’application que vous choisissez.</p>
+
+  <h2>Idées d’économies avec votre clé Gemini (facultatif)</h2>
+  <p>Depuis Paramètres → Idées d’économies avec Gemini, vous pouvez saisir une clé de l’API Gemini que vous créez vous-même dans Google AI Studio. La fonction est désactivée tant que vous n’avez pas saisi de clé, et vous pouvez désactiver l’idée automatique ou supprimer la clé à tout moment.</p>
+  <ul>
+    <li><strong>Ce qui est envoyé :</strong> chaque fois que vous enregistrez une dépense (ou que vous appuyez sur « Demander une idée »), le montant, la catégorie, la date et le moyen de paiement (espèces, débit, crédit, paiement en plusieurs fois) de cette dépense, ainsi que les totaux par catégorie du mois et du mois précédent, vos budgets, vos opérations récurrentes mensuelles (uniquement catégorie, montant et jour) et l’historique des mois. Jamais les notes des opérations, les noms de vos comptes ni les photos de tickets.</li>
+    <li><strong>Où :</strong> directement à l’API Gemini de Google (<code>generativelanguage.googleapis.com</code>), via HTTPS et au nom de votre clé. Les données ne transitent par aucun serveur du développeur.</li>
+    <li><strong>Utilisation par Google :</strong> soumise aux <a href="https://ai.google.dev/gemini-api/terms">conditions d’utilisation de l’API Gemini</a>. Avec des clés du niveau gratuit, Google peut utiliser le contenu envoyé pour améliorer ses produits.</li>
+    <li><strong>La clé :</strong> elle est enregistrée chiffrée sur le téléphone à l’aide de l’Android Keystore, n’est incluse ni dans les sauvegardes ni dans Drive, et « Supprimer la clé » l’efface. Lorsque vous la saisissez, l’application effectue un test qui ne contient aucune de vos données.</li>
+  </ul>
+
+  <h2>Données qui ne sont pas collectées</h2>
+  <p>AhorroCheck ne collecte ni ne partage de données personnelles, d’identifiants de l’appareil, de données de localisation, de contacts ou de données d’utilisation. Les seules connexions à Internet qu’elle établit sont, si vous les activez, avec Google Drive pour vos sauvegardes et avec l’API Gemini pour les idées d’économies.</p>
+
+  <h2>Suppression des données</h2>
+  <p>Vous pouvez supprimer toutes les données depuis Paramètres → « Effacer toutes les données », ou en désinstallant l’application.</p>
+
+  <h2>Mineurs</h2>
+  <p>L’application ne s’adresse pas aux enfants de moins de 13 ans et ne collecte de données d’aucun utilisateur.</p>
+
+  <h2>Modifications de la présente politique</h2>
+  <p>Si l’application intègre des fonctions modifiant le traitement des données (par exemple, de la publicité), la présente politique sera mise à jour et la date figurant en haut de la page reflétera la modification.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question concernant la présente politique : <a href="mailto:avalenzano@gmail.com">avalenzano@gmail.com</a></p>
+</main>
+</body>
+</html>

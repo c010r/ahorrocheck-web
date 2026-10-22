@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade do AhorroCheck</title>
+<meta name="description" content="Quais informações o app AhorroCheck manipula e como as trata.">
+<link rel="icon" href="icono.png" type="image/png">
+<link rel="alternate" hreflang="es" href="https://c010r.github.io/ahorrocheck-web/privacidad.html">
+<link rel="alternate" hreflang="en" href="https://c010r.github.io/ahorrocheck-web/privacy-en.html">
+<link rel="alternate" hreflang="it" href="https://c010r.github.io/ahorrocheck-web/privacy-it.html">
+<link rel="alternate" hreflang="fr" href="https://c010r.github.io/ahorrocheck-web/privacy-fr.html">
+<link rel="alternate" hreflang="pt-BR" href="https://c010r.github.io/ahorrocheck-web/privacy-pt.html">
+<style>
+  :root { --bg: #f6f8f6; --card: #ffffff; --ink: #1c2b22; --muted: #5b6a61; --accent: #1b6b4a; --line: #dfe6e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1613; --card: #18231d; --ink: #e8efe9; --muted: #a4b3aa; --accent: #6fd3a3; --line: #2a3a31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  nav a { color: var(--accent); text-decoration: none; }
+  .langs { margin-top: 6px; color: var(--muted); font-size: 0.9rem; }
+  h1 { font-size: 1.8rem; margin: 12px 0 4px; }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.95em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">← AhorroCheck</a></nav>
+  <nav class="langs" aria-label="Idioma"><a href="privacidad.html" hreflang="es" lang="es">Español</a> · <a href="privacy-en.html" hreflang="en" lang="en">English</a> · <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a> · <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a> · <span aria-current="page">Português</span></nav>
+  <h1>Política de privacidade do AhorroCheck</h1>
+  <p class="updated">Última atualização: 20 de outubro de 2026</p>
+
+  <p>O AhorroCheck é um aplicativo para Android de controle pessoal de receitas e despesas mensais. Esta política descreve quais informações o app manipula e como as trata.</p>
+
+  <h2>Resumo</h2>
+  <ul>
+    <li>Todos os seus dados (lançamentos, categorias, orçamentos, recorrentes mensais, contas e cartões, parcelas, metas de economia, despesas frequentes, moeda e cotação, tema, lembretes e fotos de cupons fiscais) ficam salvos no seu dispositivo.</li>
+    <li>Se você quiser, o app pode salvar backups no seu próprio Google Drive. Isso é opcional e você pode desconectá-lo quando quiser.</li>
+    <li>Se você quiser, pode compartilhar um resumo do mês (sem notas nem fotos) com o app Gemini ou outro app pelo botão “Analisar com o Gemini”.</li>
+    <li>Se você inserir sua própria chave da API do Gemini, depois de cada despesa o app pede ao Gemini uma ideia para economizar: ele envia ao Google os dados dessa despesa e dados agregados do mês, nunca notas nem fotos.</li>
+    <li>Os lembretes e os alertas de orçamento são notificações geradas no seu próprio celular; não há nenhum serviço de notificações externo.</li>
+    <li>O AhorroCheck não tem contas de usuário próprias, não se conecta a nenhum servidor do desenvolvedor, não se conecta ao seu banco e não envia seus dados a terceiros.</li>
+    <li>Não exibe publicidade nem inclui ferramentas de análise ou rastreamento.</li>
+  </ul>
+
+  <h2>Dados que o app armazena no seu dispositivo</h2>
+  <ul>
+    <li>Os lançamentos que você registra (valor, tipo, categoria, conta, data e nota) e, se você inserir uma despesa em outra moeda, o valor original e a cotação.</li>
+    <li>Suas categorias, limites de orçamento, recorrentes mensais, compras parceladas, metas de economia com seus aportes e despesas frequentes.</li>
+    <li>Suas contas e cartões: apenas o nome, o tipo (dinheiro, débito ou crédito), o saldo inicial e, nos cartões, o dia de fechamento e o de vencimento. O app nunca pede nem salva números de cartão, usuários nem senhas do seu banco.</li>
+    <li>Suas preferências: moeda principal e secundária, cotação, tema e configurações de lembretes.</li>
+    <li>As fotos de cupons fiscais que você decide anexar a uma despesa. Elas são salvas no armazenamento privado do app, em tamanho reduzido.</li>
+    <li>Se você ativar o bloqueio por PIN, o app salva uma verificação derivada do PIN (não o PIN em si). A impressão digital ou o rosto são verificados pelo Android: o app nunca acessa seus dados biométricos.</li>
+  </ul>
+  <p>Esses dados não saem do dispositivo, a menos que você decida isso por meio das funções de exportação ou do backup no Google Drive descrito mais abaixo.</p>
+
+  <h2>Leitura de cupons fiscais (reconhecimento de texto e de QR)</h2>
+  <p>Para preencher o valor, a data e o estabelecimento a partir da foto de um cupom fiscal, o app usa as bibliotecas de reconhecimento de texto e de leitura de códigos do Google ML Kit na versão integrada ao aplicativo. Se o cupom tiver o código QR da nota fiscal eletrônica (e-factura da DGI), o app lê dele o valor e a data. O processamento acontece inteiramente no seu dispositivo: a imagem não é enviada a nenhum servidor e o app não consulta nenhum serviço externo com os dados do QR.</p>
+
+  <h2>Câmera e galeria</h2>
+  <p>O app não solicita a permissão de câmera. Para tirar uma foto, ele abre o app de câmera do sistema e recebe apenas a imagem que você captura. Para escolher uma imagem existente, usa o seletor de fotos do sistema, que entrega a ele apenas a imagem que você seleciona.</p>
+
+  <h2>Importação do extrato bancário</h2>
+  <p>Você pode importar um arquivo CSV exportado do site ou do app do seu banco. O app lê apenas o arquivo que você escolhe com o seletor de arquivos do sistema, interpreta-o no dispositivo e não se conecta ao seu banco nem pede credenciais bancárias.</p>
+
+  <h2>Notificações</h2>
+  <p>Se você ativar os lembretes (diário ou semanal, e o aviso de recorrentes não aplicados) ou os alertas de orçamento, o app mostra notificações geradas no seu próprio celular, para o que pede a permissão de notificações no Android 13 ou superior. Não usa nenhum serviço de notificações push. Com o bloqueio por PIN ativo, as notificações não mostram valores na tela de bloqueio.</p>
+
+  <h2>Widget e atalhos</h2>
+  <p>O widget da tela inicial mostra o saldo do mês com base nos dados salvos no dispositivo. Com o bloqueio por PIN ativo, em vez de valores ele mostra “Toque para ver”. Os atalhos do ícone apenas abrem o app na tela de nova despesa ou de leitura de cupom.</p>
+
+  <h2>Exportação e backups</h2>
+  <p>As funções “Exportar backup” e “Exportar lançamentos (CSV)” geram um arquivo, e você escolhe onde salvá-lo. A partir desse momento, o arquivo fica sob seu controle e fora do alcance do app.</p>
+  <p>Se você tiver ativado o backup do Android (Google One / backup do dispositivo), o sistema inclui apenas o arquivo de dados do app (não as fotos de cupons fiscais) e somente quando o backup é criptografado de ponta a ponta com o bloqueio de tela do seu celular. Em uma transferência direta entre celulares, as fotos também são copiadas.</p>
+
+  <h2>Backup no Google Drive (opcional)</h2>
+  <p>Em Configurações → Google Drive, você pode conectar sua conta do Google para que o app salve backups no seu próprio Google Drive. Essa função fica desativada até que você a conecte.</p>
+  <ul>
+    <li><strong>O que é enviado:</strong> o mesmo arquivo <code>.zip</code> da exportação manual (seus lançamentos, categorias, orçamentos, recorrentes mensais, contas, parcelas, metas, preferências e fotos de cupons fiscais), criptografado em trânsito.</li>
+    <li><strong>Para onde:</strong> para uma pasta chamada “AhorroCheck” no seu Drive, na sua conta. O desenvolvedor não recebe nem pode ver esses arquivos; eles não passam por nenhum servidor do desenvolvedor.</li>
+    <li><strong>Qual permissão é solicitada:</strong> apenas <code>drive.file</code>, que permite ao app ver e modificar somente os arquivos que ele mesmo criou. Ele não pode acessar o restante do seu Drive.</li>
+    <li><strong>Quando:</strong> todos os dias ao abrir o app, alguns minutos depois de cada alteração e, por segurança, uma vez por dia, somente com Wi-Fi se você deixar configurado assim; também quando você toca em “Fazer backup agora”. É mantida uma única cópia, a mais recente: cada nova cópia substitui a anterior.</li>
+    <li><strong>O que o app salva no dispositivo sobre a conexão:</strong> o e-mail da conta escolhida, o identificador da pasta e a data do último backup.</li>
+    <li><strong>Como deixar de usá-la:</strong> “Desconectar” em Configurações interrompe os backups. Os que já foram enviados permanecem no seu Drive e você pode apagá-los pelo Drive. Para remover a permissão do app, use <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Os dados salvos no Google Drive ficam sujeitos à política de privacidade do Google. O uso que o AhorroCheck faz das informações recebidas das APIs do Google está em conformidade com a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de uso limitado.</p>
+
+  <h2>Dicas com o Gemini (opcional)</h2>
+  <p>O botão “Analisar com o Gemini” do Resumo monta um texto com um resumo do mês (receitas e despesas totais, despesas por categoria comparadas com o mês anterior, orçamentos, recorrentes mensais e histórico de meses) e o compartilha, com sua confirmação, com o app Gemini do Google, se estiver instalado, ou com o app que você escolher no seletor do Android. Não inclui as notas dos lançamentos nem as fotos de cupons fiscais. Nada é enviado até você tocar em “Enviar”, e o tratamento posterior fica sujeito à política de privacidade do Google ou do app que você escolher.</p>
+
+  <h2>Ideias de economia com sua chave do Gemini (opcional)</h2>
+  <p>Em Configurações → Ideias de economia com o Gemini, você pode inserir uma chave da API do Gemini criada por você no Google AI Studio. A função fica desativada até você inserir uma chave, e você pode desligar a ideia automática ou remover a chave quando quiser.</p>
+  <ul>
+    <li><strong>O que é enviado:</strong> cada vez que você registra uma despesa (ou toca em “Pedir uma ideia”), o valor, a categoria, a data e a forma de pagamento (dinheiro, débito, crédito, parcelas) dessa despesa, junto com os totais por categoria do mês e do mês anterior, seus orçamentos, seus recorrentes mensais (apenas categoria, valor e dia) e o histórico de meses. Nunca as notas dos lançamentos, os nomes das suas contas nem as fotos de cupons fiscais.</li>
+    <li><strong>Para onde:</strong> diretamente para a API do Gemini do Google (<code>generativelanguage.googleapis.com</code>), por HTTPS e em nome da sua chave. Não passa por nenhum servidor do desenvolvedor.</li>
+    <li><strong>Uso pelo Google:</strong> fica sujeito aos <a href="https://ai.google.dev/gemini-api/terms">termos da API do Gemini</a>. Com chaves do nível gratuito, o Google pode usar o conteúdo enviado para melhorar seus produtos.</li>
+    <li><strong>A chave:</strong> é salva criptografada no celular com o Android Keystore, não é incluída nos backups nem no Drive, e “Remover chave” a apaga. Ao inseri-la, o app faz um teste que não leva dados seus.</li>
+  </ul>
+
+  <h2>Dados que não são coletados</h2>
+  <p>O AhorroCheck não coleta nem compartilha dados pessoais, identificadores do dispositivo, localização, contatos nem dados de uso. As únicas conexões com a Internet que ele faz são, se você as ativar, com o Google Drive para seus backups e com a API do Gemini para as ideias de economia.</p>
+
+  <h2>Exclusão de dados</h2>
+  <p>Você pode apagar todos os dados em Configurações → “Apagar todos os dados”, ou desinstalando o aplicativo.</p>
+
+  <h2>Menores</h2>
+  <p>O app não se destina a menores de 13 anos e não coleta dados de nenhum usuário.</p>
+
+  <h2>Alterações nesta política</h2>
+  <p>Se o app incorporar funções que alterem o tratamento de dados (por exemplo, publicidade), esta política será atualizada e a data no topo refletirá a alteração.</p>
+
+  <h2>Contato</h2>
+  <p>Para dúvidas sobre esta política: <a href="mailto:avalenzano@gmail.com">avalenzano@gmail.com</a></p>
+</main>
+</body>
+</html>
